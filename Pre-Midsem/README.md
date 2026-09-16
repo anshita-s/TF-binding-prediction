@@ -1,4 +1,4 @@
-# Mid-semester milestone: Markov model classifier
+# Mid-semester Goal: Markov model classifier
 
 Part of the TF binding prediction project. See top-level README for context.
 
