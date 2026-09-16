@@ -28,6 +28,7 @@ k-fold value (>=2):
 ```
 
 Example session:
+```
 Enter chromosome number (except 3,10,17,x,y): 4
 Choose TF (CTCF, REST, EP300): REST
 Markov model order m: 3
