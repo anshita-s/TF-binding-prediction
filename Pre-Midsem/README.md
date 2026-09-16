@@ -16,7 +16,7 @@ Part of the TF binding prediction project. See top-level README for context.
 
 ## How to run
 
-From inside the `midsem/` directory:
+From inside the `midsem/` (working directory):
 ` python MarkovCrossValidation.py`
 
 The script will prompt for:
@@ -55,6 +55,7 @@ data/
 Chromosomes 3, 10, 17, X, and Y are excluded from training. Data was
 provided as part of the course and derives from ENCODE ChIP-seq peaks on
 the hg38 genome.
+**Update the file path, once you [Download data.zip from Google Drive](https://drive.google.com/file/d/1JUuClufcE9jrF9ilLhNqedvsy1lxvzsT/view?usp=sharing)**
 
 ## Output
 
