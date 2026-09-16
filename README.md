@@ -24,6 +24,7 @@ baseline for the midterm, and per-TF pipelines for the final submission.
 └── README.md ← setup and run instructions for this part
 ```
 
+
 ## Results
 
 **Final pipelines — held-out chromosomes 3, 10, and 17:**
@@ -35,31 +36,31 @@ baseline for the midterm, and per-TF pipelines for the final submission.
 | EP300 | 0.922 | 0.126 |
 
 Baseline prevalence is ~5% bound, so a random classifier gives auPRC
-near 0.05. EP300's pipeline is documented in `report.pdf` §4.3 but its
+near 0.05. EP300's pipeline is documented in `Report.pdf` §4.3 but its
 code is not preserved in this repository.
 
 **Midterm Markov baseline:** auROC 0.74–0.78, auPRC 0.02–0.05 across the
-three TFs. Full breakdown in `report.pdf` §3.1.
+three TFs. Full breakdown in `Report.pdf` §3.1.
 
 ## Where to start
 
-- **Curious about the science?** Read `report.pdf`. It covers the problem,
+- **Curious about the science?** Read `Report.pdf`. It covers the problem,
   data, methods, results, and — importantly — approaches that were tried
   and discarded.
-- **Want to run something?** See `midsem/README.md` or
-  `finalsem/README.md`. Each has its own requirements, data setup, and
+- **Want to run something?** See `Pre-Midsem/README.md` or
+  `Post-Midsem/README.md`. Each has its own requirements, data setup, and
   run instructions.
-- **Want the problem statement?** `description.pdf` is the brief as
-  originally given.
+- **Want the problem statement?** `Project_description.pdf` is the brief
+  as originally given.
 
 ## What's in each milestone
 
-**`midsem/`** — a Markov model classifier. Trains bound and unbound
+**`Pre-Midsem/`** — a Markov model classifier. Trains bound and unbound
 Markov models of order `m` on k-fold splits of a single chromosome,
 scores held-out bins by log-odds ratio, and plots ROC and PR curves.
 Supports `m = 0..10` and `k = 3..5`.
 
-**`finalsem/`** — two pipelines:
+**`Post-Midsem/`** — two pipelines:
 - **CTCF:** linear SVM over JASPAR PWM score, PhastCons conservation,
   binary ATAC, and FIMO score.
 - **REST:** logistic regression over strand-invariant k-mer frequencies,
@@ -71,13 +72,12 @@ Not included in this repository. The training TSVs are course-provided
 and derive from ENCODE ChIP-seq peaks on the hg38 genome. Reference
 genome, JASPAR PFMs, PhastCons bigWig, and MEME motif files are
 downloaded separately. See the per-milestone READMEs for the exact
-expected layout, or `report.pdf` §2 for full sources.
+expected layout, or `Report.pdf` §2 for full sources.
 
 ## Notes
 
 - AI tools were used for debugging and report-writing assistance; all
   code is understood and owned by the team.
-- Collaborators and acknowledgements are in `report.pdf` §8.
+- Collaborators and acknowledgements are in `Report.pdf` §8.
 - Full methodological details, including approaches that were tried and
-  discarded, are in `report.pdf` §3 and §4.
-  
+  discarded, are in `Report.pdf` §3 and §4.
