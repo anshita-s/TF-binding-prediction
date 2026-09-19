@@ -1,6 +1,7 @@
 # Predicting TF Binding Potential of DNA Sequences
 
 Course project, **Computational Functional Genomics** (Jan–Apr 2026).
+
 By- Anshita Sharma and Urvija Agrawal
 
 Predicts in vivo binding of transcription factors from 200 bp DNA bins in
